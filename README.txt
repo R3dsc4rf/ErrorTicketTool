@@ -57,10 +57,6 @@ This tool does not repair corrupted data.
 It does not combine similar data. a wrong date will be displayed wrong. error type "new" and "NEW" will be 2 seperate types
 You cannot dat columns to example data right now.
 
-## Usage
-
-Use this tool to make Error tickets a little more plesent.
-
 ## Support
 
 no Support guaranteed
@@ -73,7 +69,6 @@ MIT
 
 todo
 - add save last opend .csv to autoload after programm starts
-- Make ui better -> do not open new window, make windows in seperate tabs in main
 - restrickt import to reduce corrupted data -> e.g. date have to be date, id have to be number only.
 - make ticket creator dynamic so you can add column in csv
 
