@@ -1,0 +1,102 @@
+ID,Name,Type,Prio,Date,Status,Occurrence,Description,Error,Expected
+1,aaa,aaa,low,03.05.2021,New,never,"aaa
+","aa
+","a
+"
+2,bb,b,low,03.05.2021,Open,bb,"Step1: bb
+","b
+","bbb
+"
+3,cc,c,low,03.05.2021,Open,once,"ccc
+","cccc
+","ccccc
+"
+4,d,d,low,03.05.2021,Open,sometimes,"dd
+","ddd
+","d
+"
+5,t,tt,high,03.05.2021,New,sometimes,"Step1: Do something 
+Step2: Do something 
+Step3: Do something
+","On Step2 ttt
+","On Step2 there should be ttt
+"
+6,oo,o,high,03.05.2021,New,once,"ooo
+","oo
+","oooo
+"
+7,ii,ii,Error Test,04.05.2021,New,always,"iii
+","i
+","ii
+"
+8,m,m,high,03.05.2021,New,rare,"m
+","m
+","m
+"
+9,jjj,jjj,high,03.05.2021,New,sometimes,"Step1: Do something 
+Step2: Do something 
+Step3: Do something
+","On Step2 there was an Error
+Stuff happened
+","On Step2 there should be XXX
+"
+10,zz,zz,low,03.05.2021,New,sometimes,"Step1: Do something 
+Step2: Do something 
+Step3: Do something
+","On Step2 there was an Error
+Stuff happened
+","On Step2 there should be XXX
+"
+11,tz,tz,mid,03.05.2021,New,sometimes,"Step1: Do something 
+Step2: Do something 
+Step3: Do something
+","On Step2 there was an Error
+Stuff happened
+","On Step2 there should be XXX
+"
+12,rar,rar,low,03.05.2021,New,always,"Step1: Do something 
+Step2: Do something 
+Step3: Do something
+","On Step2 there was an Error
+Stuff happened
+","On Step2 there should be XXX
+"
+13,aa,a,low,Error Day Test,in progress,always,"Step1: Do something 
+Step2: Do something 
+Step3: Do something
+","On Step2 there was an Error
+Stuff happened
+","On Step2 there should be XXX
+"
+14,quak,ente,high,02.05.2021,New,always,"Step1: Do something 
+Step2: Do something 
+Step3: Do something
+","On Step2 there was an Error
+Stuff happened
+","On Step2 there should be XXX
+"
+15,essig gurke,nicht süß,low,04.05.2021,New,always,"Step1: esse gurke
+Step2: gruke ist sauer
+Step3: igit
+","will weniger igit
+","mache gurke süß
+"
+16,done,done,low,05.05.2021,Done,always,"Step1: Do something 
+Step2: Do something 
+Step3: Do something
+","On Step2 there was an Error
+Stuff happened
+","On Step2 there should be XXX
+"
+17,Zeitstress,Time,mid,05.05.2021,New,once,"Step1: Do something 
+Step2: Do something 
+Step3: Do something
+","On Step2 there was an Error
+Stuff happened
+","On Step2 there should be XXX
+"
+18,hallo welt,ente,high,06.05.2021,New,never,"blub
+","On Step2 there was an Error
+Stuff happened
+","On Step2 there should be XXX
+"
