@@ -89,10 +89,3 @@ ui better -\> do not open new window, make windows in seperate tabs in
 main - restrickt import to reduce corrupted data -\> e.g. date have to
 be date, id have to be number only. - make ticket creator dynamic so you
 can add column in csv
-
-Project status
---------------
-
-Funktional, but error-prone. Do not add additional Column in Example
-data. Tool does not remember your last opened .cvs and autoload will
-always load example file "TicketData.csv"
