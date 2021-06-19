@@ -66,11 +66,6 @@ data. a wrong date will be displayed wrong. error type "new" and "NEW"
 will be 2 seperate types You cannot dat columns to example data right
 now.
 
-Usage
------
-
-Use this tool to make Error tickets a little more plesent.
-
 Support
 -------
 
