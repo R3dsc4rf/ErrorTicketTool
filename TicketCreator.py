@@ -1,15 +1,8 @@
 '''
  Ticket Creator.py is used to add error tickes to an csv data.
- The class includes a csv reader, UI with TKinter and adds the current time to the ticket. there is nearly no error catching.. 
+ The class includes a csv reader, UI with TKinter and adds the current time to the ticket.
+ there is only very minor error cathing. i may delete this in the future
  so do not use corrupted data or future primary key ticket id may be wrong
- 
- the tool includes
- - UI with text input for ticket
- - add ticket button (only active when any ticket data is added in text inputs)
- - load button to load a different file
- - a number what shows the ticked id created with the add button
- - quit button (disabled if opened in tab)
-
  ! warning. right now the tool will always load the file TicketData.csv first
  '''
 
@@ -21,7 +14,6 @@ import tkinter as tk
 import csv
 import datetime as dt
 from tkinter import filedialog as fd  # for open file funktion
-
 
 ###########################################################################
 ####################  init Class/ Global Var/ Funktion ####################
@@ -70,7 +62,8 @@ class ticket_creator_window(tk.Frame):
         self.create_middle_Frame()
         self.create_bottom_Frame()
 
-        self.mainFrame.pack(expand=True, fill="both")
+        #self.mainFrame.pack(expand=True, fill="both")
+        self.mainFrame.pack(fill="both")
 
     def create_Top_Frame(self):
         ''' Frame for Ticket description. if Entry is change jump in text_edited()'''
@@ -157,15 +150,17 @@ class ticket_creator_window(tk.Frame):
         '''Frame for Buttons'''
         self.botFrame = tk.Frame(self.mainFrame)
 
-        self.lDataName = tk.Label(self.botFrame, text=f"{str(self.dataname):>35}")
-        self.lDataName.grid(row=0, column=1, padx=2, pady=2, ipadx=10)
+        if __name__ == "__main__":
+            self.lDataName = tk.Label(self.botFrame, text=f"{str(self.dataname):>35}")
+            self.lDataName.grid(row=0, column=1, padx=2, pady=2, ipadx=10)
 
         self.lTicketID = tk.Label(self.botFrame, text="Ticket Number: " + str(self.newestID + 1))
         self.lTicketID.grid(row=0, column=2, padx=2, pady=2, ipadx=10)
 
-        self.openFIleButton = tk.Button(self.botFrame, text="openFIle",
+        if __name__ == "__main__":
+            self.openFIleButton = tk.Button(self.botFrame, text="openFIle",
                                         command=self.open_FIle)
-        self.openFIleButton.grid(row=0, column=3, sticky=tk.SE, padx=2, pady=2, ipadx=10)
+            self.openFIleButton.grid(row=0, column=3, sticky=tk.SE, padx=2, pady=2, ipadx=10)
 
         self.addTicketButton = tk.Button(self.botFrame, text="add Ticket",
                                          command=self.add_Ticket)
@@ -216,8 +211,12 @@ class ticket_creator_window(tk.Frame):
 
     def update_data_file(self):
         '''you opened a new data file - Update ID and other'''
+
         self.lTicketID["text"] = "Ticket Number: " + str(self.newestID)
-        self.lDataName["text"] = f"...{self.dataname[-30:len(self.dataname)]}"
+
+        if __name__ == "__main__":
+            self.lDataName["text"] = f"...{self.dataname[-30:len(self.dataname)]}"
+
         self.update()
 
     def add_Ticket(self):
@@ -259,6 +258,12 @@ class ticket_creator_window(tk.Frame):
         print("Warning: " + self.dataname + " is changed!")
         self.open_Data_File()
         self.update_data_file()
+
+    def set_file(self, fileName):
+        self.dataname = fileName
+        self.open_Data_File()
+        self.update_data_file()
+
 
 
 ###########################################################################
