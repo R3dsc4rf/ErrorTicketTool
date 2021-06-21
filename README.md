@@ -8,6 +8,11 @@ Error Ticket Tool is an Tool to help you adding Error Tickets into an
 .csv. (You can use .csv as Excell Table.) Additionly it adds a small
 Graph tool to show basic Information.
 
+![grafik](https://user-images.githubusercontent.com/83809431/122727211-162e3400-d277-11eb-9a5f-de06774d64e6.png)
+
+![grafik](https://user-images.githubusercontent.com/83809431/122727262-247c5000-d277-11eb-844d-86d90d5477fa.png)
+
+
 **this tool cannot do:**
 
 - this tool also does not repair corrupted data
@@ -15,8 +20,9 @@ Graph tool to show basic Information.
 - this tool alwas loads data from TicketData.csv first
 - this tool always work with .csv data with this heading:
     
-        ID | Name | Type | Prio | Date | Status | Occurrence | Description | Error | Expected
-        -------------------------------------------------------------------------------------
+
+![grafik](https://user-images.githubusercontent.com/83809431/122727997-f2b7b900-d277-11eb-983b-8593e25fb446.png)
+
 
 I started this tool as port of an python crash cours and finished it privatly after i passed.
 This tool i an excersize for me to learn python and github. I worked as a system tester and felt comfortable with the idea building a small ticket creator.
